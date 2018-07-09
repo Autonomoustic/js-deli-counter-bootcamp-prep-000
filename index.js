@@ -14,6 +14,7 @@ function currentLine(line) {
   if(!line.length){
     return "The line is currently empty."
   }
+  const whoIsWaiting = []
   for (var i = 0, l = line.length; i < l; i++) {
     whoIsWaiting.push(`${i + 1}. ${line[i]}`)
   }
